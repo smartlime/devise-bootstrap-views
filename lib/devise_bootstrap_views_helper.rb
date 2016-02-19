@@ -19,4 +19,20 @@ module DeviseBootstrapViewsHelper
 
     html.html_safe
   end
+
+  def bootstrap_top
+    html = <<-HTML
+    <row><div class="col-sm-3"></div><div class="col-xs-12 col-sm-6">
+    HTML
+
+    html.html_safe
+  end
+
+  def bootstrap_bottom
+    html = <<-HTML
+    </div><div class="col-sm-3"></div></row>
+    HTML
+
+    html.html_safe
+  end
 end
