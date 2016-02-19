@@ -10,7 +10,7 @@ module DeviseBootstrapViewsHelper
       resource: resource.class.model_name.human.downcase)
 
     html = <<-HTML
-    <div class="alert alert-danger alert-block">
+    <div class="alert alert-danger alert-block devise-bs">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
       <h5>#{sentence}</h5>
       <ul>#{messages}</ul>
@@ -18,5 +18,17 @@ module DeviseBootstrapViewsHelper
     HTML
 
     html.html_safe
+  end
+
+  def bootstrap_top
+    html = <<-HTML
+    <row><div class="col-sm-3"></div><div class="col-xs-12 col-sm-6">
+    HTML
+  end
+
+  def bootstrap_bottom
+    html = <<-HTML
+    </div><div class="col-sm-3"></div></row>
+    HTML
   end
 end
