@@ -1,5 +1,13 @@
 # Devise Bootstrap Views
 
+## Important: What fix this fork?
+Forms are stretched to take reasonable part of viewport. Maybe it is better to add class selector to change style as you wish using SCSS, but this approach fits for my project.
+Maybe someday I'll make it more flexible.
+
+Gene.
+
+##...so, now continue original Readme:
+
 Here are some of the highlights:
 
 * Devise views with Bootstrap 3.
